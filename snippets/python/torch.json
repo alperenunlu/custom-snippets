@@ -1,0 +1,20 @@
+{
+    "Torch Imports": {
+        "prefix": "torchimp",
+        "body": [
+            "import torch",
+            "import torch.nn as nn",
+            "import torch.nn.functional as F",
+            "import torch.optim as optim",
+            "from torch.utils.data import DataLoader, Dataset",
+            "",
+            "device = torch.device(",
+            "\t\"cuda\" if torch.cuda.is_available() else",
+            "\t\"mps\" if torch.backends.mps.is_available() else",
+            "\t\"cpu\"",
+            ")",
+            "$0"
+        ],
+        "description": "Basic PyTorch Imports"
+    }
+}
